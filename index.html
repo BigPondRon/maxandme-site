@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Max &amp; Me — everything your dog needs, on one map</title>
+  <meta name="description" content="A simple, large-print map of dog parks, vets, water bowls, bag dispensers, groomers, and more — kept up to date by neighbors.">
+  <link rel="preload" href="fonts/AtkinsonHyperlegible_400Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wide">
+  <div class="hero">
+    <h1><img class="logo" src="img/logo.svg" alt="" width="64" height="64">Max &amp; Me</h1>
+    <p class="lead">Everything your dog needs, on one simple map. Big text, big buttons, and nothing to sell you.</p>
+    <div class="card beta" id="beta">
+      <h2>Help us test it</h2>
+      <p><strong>Android phone?</strong> The beta opens on Android first. Email us the address of the Google account on your phone (usually your Gmail), and we’ll send you an invitation.</p>
+      <p><strong>iPhone?</strong> Email us too, and we’ll invite you as soon as the iPhone beta is ready.</p>
+      <a class="button" href="mailto:support@maxandme.app?subject=Max%20%26%20Me%20beta&amp;body=I%E2%80%99d%20like%20to%20test%20Max%20%26%20Me.%0A%0AMy%20phone%20(Android%20or%20iPhone)%3A%20%0AThe%20Google%20account%20email%20on%20my%20phone%20(Android%20only)%3A%20%0ATown%20where%20I%20walk%20my%20dog%3A%20%0A">Email us to join the beta</a>
+      <p class="muted">Or write to <a href="mailto:support@maxandme.app">support@maxandme.app</a>. We use your email only to invite you and hear what you think.</p>
+    </div>
+  </div>
+
+  <section>
+    <h2>What’s on the map</h2>
+    <p>Every kind of place has its own color <em>and</em> its own picture, so you never have to tell colors apart.</p>
+    <ul class="kinds">
+      <li style="--c:#2F7D4A"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M12 14.5V21"/></svg>Dog parks</li>
+      <li style="--c:#C56A12"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9v1a2.5 2.5 0 0 1-5 0 2.5 2.5 0 0 1-6 0A2.5 2.5 0 0 1 4 10zM5 13v7h14v-7"/></svg>Pet stores</li>
+      <li style="--c:#A63D57"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="8" width="17" height="12" rx="2"/><path d="M9 8V5.5h6V8M12 11v6M9 14h6"/></svg>Vets</li>
+      <li style="--c:#8A6232"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5.5 9.5V20h13V9.5"/><path d="M12 17l-2.6-2.5a1.6 1.6 0 0 1 2.6-1.9 1.6 1.6 0 0 1 2.6 1.9z"/></svg>Shelters</li>
+      <li style="--c:#4F6D7A"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6.5" r="2.5"/><circle cx="6" cy="17.5" r="2.5"/><path d="M8 8l12 9M8 16L20 7"/></svg>Groomers</li>
+      <li style="--c:#4F8A10"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h8l2 4v10H6V10zM9 6V3.5h6V6"/><path d="M9.5 14.5h5"/></svg>Bag dispensers</li>
+      <li style="--c:#6B4F3A"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M9 6V4h6v2M6.5 6l1 14h9l1-14M10 10v7M14 10v7"/></svg>Trash cans</li>
+      <li style="--c:#1D5FBF"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5S5.5 11 5.5 15a6.5 6.5 0 0 0 13 0C18.5 11 12 3.5 12 3.5z"/></svg>Water bowls</li>
+      <li style="--c:#6B3FA0"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.5-3 7.8-7.5 9.5-4.5-1.7-7.5-5-7.5-9.5V6zM12 9v6M9 12h6"/></svg>Vaccine clinics</li>
+      <li style="--c:#6B3FA0"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5.5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3.5v4M16 3.5v4M9 15l2 2 4-4"/></svg>Vaccine &amp; adoption events</li>
+      <li style="--c:#0E7490"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v7a2 2 0 0 0 2 2v9M11 3v7a2 2 0 0 1-2 2M16 21V3c-2 1.5-3 4-3 8h3"/></svg>Dog-friendly cafés</li>
+    </ul>
+    <p class="muted">Plus hand-picked natural food, treats, and toys, and an Emergency Vet button that finds the nearest open vet in one tap.</p>
+  </section>
+
+  <section>
+    <h2>How neighbors add places</h2>
+    <ol class="steps">
+      <li><strong>Stand at the place</strong> and take a photo with the app’s camera. There’s no photo library, so every photo proves it’s real.</li>
+      <li><strong>The phone checks your location</strong> at the moment you take it, so a pin can’t be dropped from the couch.</li>
+      <li><strong>A reviewer confirms it</strong> before it shows on the map. Anyone standing nearby can later tap “Still here?” to keep it fresh.</li>
+    </ol>
+    <p>Neighbors earn points, ranks, and badges for the small things: a bag dispenser, a water bowl, a vaccine day.</p>
+  </section>
+
+  <section class="promise">
+    <h2>Our promise</h2>
+    <ul>
+      <li><strong>Free, forever.</strong> The map, search, Emergency Vet, and adding places are never locked.</li>
+      <li><strong>No ads and no tracking.</strong> No pop-ups, no banners, no ad networks.</li>
+      <li><strong>Plain and readable.</strong> Large type that follows your phone’s text-size setting.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>About Max &amp; Me</h2>
+    <p>Max &amp; Me is a small independent project, made for people who love their dogs and want the walk, the vet, and the park to be easy to find. Questions or ideas? We read every email.</p>
+    <div class="buttons">
+      <a class="button" href="mailto:support@maxandme.app">Email us</a>
+      <a class="button alt" href="privacy">Privacy policy</a>
+      <a class="button alt" href="terms">Terms of use</a>
+    </div>
+  </section>
+
+  <footer>
+    Questions? Email <a href="mailto:support@maxandme.app">support@maxandme.app</a>.<br>
+    Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.
+  </footer>
+</main>
+</body>
+</html>
